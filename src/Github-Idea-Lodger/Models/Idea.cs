@@ -11,6 +11,6 @@ namespace Github_Idea_Lodger.Models
 
         public string description { get; set; }
 
-        public string label { get; set; }
+        public List<string> labels { get; set; }
     }
 }

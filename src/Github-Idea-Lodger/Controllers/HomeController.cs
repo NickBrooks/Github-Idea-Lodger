@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
+﻿using Flurl.Http;
 using Github_Idea_Lodger.Models;
-using Flurl.Http;
+using Microsoft.AspNet.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace Github_Idea_Lodger.Controllers
 {
@@ -16,7 +15,8 @@ namespace Github_Idea_Lodger.Controllers
             var labelList = new List<string>();
             labelList.Add("idea");
 
-            return await URL
+            var response = await URL
+                .WithHeader("User-Agent", "NickBrooks")
                 .PostUrlEncodedAsync(new
                 {
                     title = idea.title,
@@ -25,6 +25,8 @@ namespace Github_Idea_Lodger.Controllers
                     labels = labelList
                 })
                 .ReceiveString();
+
+            return response;
         }
 
         public IActionResult Index()
@@ -50,9 +52,9 @@ namespace Github_Idea_Lodger.Controllers
                 await sendToApi(newIdea);
                 ViewData["Result"] = "You're an ideas man";
             }
-            catch
+            catch (Exception ex)
             {
-                ViewData["Result"] = "You suck";
+                ViewData["Result"] = ex.ToString();
             }            
 
             return View();
