@@ -5,11 +5,17 @@
 @using (Html.BeginForm())
 {
 <form class="text-center">
-    <p>@ViewBag.Message</p>
+    <br />
     <input type="text" name="idea" class="form-control" placeholder="Idea" required autofocus>
     <br />
     <textarea class="form-control" name="description" placeholder="Description" rows="4"></textarea>
     <br />
     <button class="btn btn-lg btn-success btn-block" type="submit" name="submit">Nom</button>
+    @if (ViewBag.ImgUrl != null)
+    {
+        <br />
+        <p><img class="center-block" style="max-width:100%" src="@ViewBag.ImgUrl" /></p>
+    }    
+    <h2 class="center-block">@ViewBag.Message</h2>
 </form>
 }

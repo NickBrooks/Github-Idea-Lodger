@@ -21,6 +21,7 @@ namespace GithubIdeaCollector.Controllers
             if (idea == "" || idea == null)
             {
                 ViewBag.Message = "Enter an idea yo!";
+                ViewBag.ImgUrl = "homerSad.jpg";
                 return View();
             }
 
@@ -34,10 +35,12 @@ namespace GithubIdeaCollector.Controllers
 
                 await client.Issue.Create("NickBrooks", "Nommer-Roadmap", newIdea);
 
-                ViewBag.Message = "You're an ideas man";
+                ViewBag.Message = "You're an ideas man!";
+                ViewBag.ImgUrl = "homerHappy.jpg";
             }
             catch (Exception ex)
             {
+                ViewBag.ImgUrl = "homerSad.jpg";
                 ViewBag.Message = ex.ToString();
             }
 
@@ -46,6 +49,7 @@ namespace GithubIdeaCollector.Controllers
 
         public ActionResult About()
         {
+            ViewBag.ImgUrl = "homerSad.jpg";
             ViewBag.Message = "Your application description page.";
 
             return View();
