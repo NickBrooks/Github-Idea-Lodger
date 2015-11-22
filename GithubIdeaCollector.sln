@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nommer-Roadmap-Ideas", "Nommer-Roadmap-Ideas\Nommer-Roadmap-Ideas.csproj", "{A6E54E4D-5793-43BD-B8B7-ED732A768359}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubIdeaCollector", "GithubIdeaCollector\GithubIdeaCollector.csproj", "{AFE72865-8C66-4F38-9D7C-2901AFD52A73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A6E54E4D-5793-43BD-B8B7-ED732A768359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A6E54E4D-5793-43BD-B8B7-ED732A768359}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A6E54E4D-5793-43BD-B8B7-ED732A768359}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A6E54E4D-5793-43BD-B8B7-ED732A768359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE72865-8C66-4F38-9D7C-2901AFD52A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE72865-8C66-4F38-9D7C-2901AFD52A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE72865-8C66-4F38-9D7C-2901AFD52A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE72865-8C66-4F38-9D7C-2901AFD52A73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

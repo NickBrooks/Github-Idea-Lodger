@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Nommer_Roadmap_Ideas
+namespace GithubIdeaCollector
 {
     public class FilterConfig
     {

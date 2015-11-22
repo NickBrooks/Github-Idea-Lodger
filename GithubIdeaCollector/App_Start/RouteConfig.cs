@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Nommer_Roadmap_Ideas
+namespace GithubIdeaCollector
 {
     public class RouteConfig
     {

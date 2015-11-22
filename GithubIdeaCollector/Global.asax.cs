@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Nommer_Roadmap_Ideas
+namespace GithubIdeaCollector
 {
     public class MvcApplication : System.Web.HttpApplication
     {
