@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@using (Html.BeginForm())
+{
+    <form class="text-center">
+        <p>@ViewData["Result"]</p>
+        <input type="text" name="idea" class="form-control" placeholder="Idea" required autofocus>
+        <br />
+        <textarea class="form-control" name="description" placeholder="Description" rows="4"></textarea>
+        <br />
+        <button class="btn btn-lg btn-success btn-block" type="submit" name="submit">Nom</button>
+    </form>
+
+}
